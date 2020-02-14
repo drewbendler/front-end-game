@@ -100,14 +100,14 @@ color: white;
   margin: 5px;
   height: 200px;
   color: #95c8f5;
-	text-shadow: 2px 2px 2px #38648a;
-	text-align: center;
+  text-shadow: 2px 2px 2px #38648a;
+  text-align: center;
 
 }
 
 .title:hover {
 	transition: transform .5s;
-		transform: scale(2);
+		transform: scale(1.1);
 	
 }
 
@@ -282,6 +282,10 @@ color: white;
 
 .container-game {
 	justify-content: space-around;
+}
+
+#chooseWord {
+	font-size: 60px;
 }
 
 
