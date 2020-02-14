@@ -196,7 +196,7 @@ playerWon.innerText = "You Won!";
 
 let letters = document.querySelector('.letters');
 
-letters.classList.add('.won');
+letters.setAttribute('color', 'green');
 }
 }
 
