@@ -1,0 +1,285 @@
+
+body {
+	margin: 0;
+}
+
+
+.container-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Odibee Sans', cursive;
+	background-image: url('https://media.giphy.com/media/pVGsAWjzvXcZW4ZBTE/giphy.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes letterSlide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.hmPic {
+
+	display: none;
+}
+
+.hmPicDisplay {
+
+	display: block;
+	padding-left: 30%;
+}
+
+.chooseWord {
+	margin: 5px;
+	padding-top: 10px;
+}
+button {
+	margin: 15px;
+	font-size: 50px;
+	font-weight: bold;
+	padding: 0px;
+	border: 0;
+	background-color: transparent;
+	  animation: 1s ease-out 0s 1 slideInFromBottom;
+	  	  color: #95c8f5;
+	text-shadow: 2px 2px 2px #38648a;
+	font-family: 'Odibee Sans', cursive;
+}
+
+button:hover {
+	transform: scale(1.3);
+transition: transform .9s;
+}
+button a {
+	text-decoration: none;
+
+	padding: 0px;
+	border: 0;
+	font-family: 'Odibee Sans', cursive;
+}
+
+.play-button:hover {
+
+color: white;
+		text-shadow: 2px 2px 2px #2c577d;
+}
+
+
+
+.title {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 5s ease-out 0s 1 slideInFromTop;
+  font-size: 50px;
+  padding: 0px;
+  margin: 5px;
+  height: 200px;
+  color: #95c8f5;
+	text-shadow: 2px 2px 2px #38648a;
+	text-align: center;
+
+}
+
+.title:hover {
+	font-style: italic;
+}
+
+.caption {
+	color: #95c8f5;
+	text-shadow: 2px 2px 2px #38648a;
+	font-size: 20px;
+	-webkit-animation: captionFadein 10s;
+}
+
+@-webkit-keyframes captionFadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+
+}
+
+.winStatus {
+
+	height: 50px;
+	text-align: center;
+	font-size: 50px;
+	margin: 10px;
+	padding: 15px;
+}
+
+
+.won {
+	 color: #78f58b;
+	text-shadow: 2px 2px 2px #298036;
+	margin: 0;
+
+}
+
+.lose {
+
+		color: #ff4d4d;
+	text-shadow: 2px 2px 2px #a31a1a;
+	margin: 0;
+}
+
+.numberOfGuesses {
+	height: 30px;
+	display: inline-block;
+	font-size: 40px;
+	padding: 15px;
+	margin: 5px;
+	color: #f27a72;
+	text-shadow: 2px 2px 2px #a33a33;
+
+}
+
+
+.container-game {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	font-family: 'Odibee Sans', cursive;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	background-image: url('https://media.giphy.com/media/pVGsAWjzvXcZW4ZBTE/giphy.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+.keyboard {
+	display: grid;
+	grid-template-rows: 50px 50px;
+	grid-template-columns: repeat(13, 1fr);
+	padding: 10px;
+	padding-top: 25px;
+	width: 600px;
+	height: 110px;
+
+
+}
+
+.letters {
+	padding: 5px;
+	border: 1px solid black;
+	height: 30px;
+	width: 30px;
+	font-size: 20px;
+	background-color: white;
+}
+
+.letters:hover {
+	color: white;
+	background-color: black;
+
+	transition: transform .5s;
+		transform: scale(2);
+}
+
+ 
+.hangmanPic {
+	height: 300px;
+	margin: 15px;
+	width: 500px;
+	align-content: center;
+
+
+}
+
+.letter-spaces {
+	display: inline-block;
+	padding: 15px;
+	font-size: 0px;
+	margin-left: 2.5px;
+	margin-right: 2.5px;
+	border-bottom: 3px solid white;
+	color: white;
+	-webkit-animation: blankFadein 1s;
+	}
+
+	@-webkit-keyframes blankFadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+
+}
+
+.letters:hover {
+
+	box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.guessedLetter {
+	font-size: 35px;
+	padding-bottom: 6px;
+}
+
+
+
+.guessWord {
+	margin: 5px;
+	padding: 5px;
+}
+
+
+
+.reset a {
+	  	  color: #95c8f5;
+	text-shadow: 2px 2px 2px #38648a;
+	font-family: 'Odibee Sans', cursive;
+	transform: scale(1.1);
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.guessedLetter {
+	font-size: 45px;
+	padding-bottom: 5px;
+}
+
+.container-game {
+	justify-content: space-around;
+}
+
+
