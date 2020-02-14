@@ -106,7 +106,9 @@ color: white;
 }
 
 .title:hover {
-	font-style: italic;
+	transition: transform .5s;
+		transform: scale(2);
+	
 }
 
 .caption {
