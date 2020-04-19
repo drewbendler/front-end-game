@@ -1,107 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
-	<title>idk what game yet</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <div class="container-title">
+      <div class="title">
+        <h1>Hang Man</h1>
+      </div>
 
+      <div class="play-button">
+        <button>Play</button>
+      </div>
+      <p class="caption">
+        *with a cool background that has nothing to do with the game*
+      </p>
+    </div>
 
-	<div class="container-title">
-		
-		<div class="title">
-			<h1>Hang Man</h1>
+    <div class="container-game">
+      <div class="winStatus">
+        <h2 class="won"></h2>
 
-				</div>
-			
+        <h2 class="lose"></h2>
+      </div>
 
-	
+      <div class="hangmanPic">
+        <img
+          src="https://i.imgur.com/GV2nYYf.png"
+          height="300"
+          class="hmPic"
+          id="1"
+        />
 
-		<div class="play-button">
-			
+        <img
+          src="https://i.imgur.com/fzFLlrU.png"
+          height="300"
+          class="hmPic"
+          id="2"
+        />
 
-			<button>Play</button>
+        <img
+          src="https://i.imgur.com/FmK80YF.png"
+          height="300"
+          class="hmPic"
+          id="3"
+        />
 
-		</div>
-<p class="caption">*with a cool background that has nothing to do with the game*</p>
+        <img
+          src="https://i.imgur.com/Z1UYLkz.png"
+          height="300"
+          class="hmPic"
+          id="4"
+        />
 
+        <img
+          src="https://i.imgur.com/ANFbmjJ.png"
+          height="300"
+          class="hmPic"
+          id="5"
+        />
 
-	</div>
+        <img
+          src="https://i.imgur.com/6s5ZIWr.png"
+          height="300"
+          class="hmPic"
+          id="6"
+        />
 
+        <img
+          src="https://i.imgur.com/w8o9FhM.png"
+          height="300"
+          class="hmPic"
+          id="7"
+        />
 
+        <img
+          src="https://i.imgur.com/j6dkRPU.png"
+          height="300"
+          class="hmPic"
+          id="8"
+        />
+      </div>
 
+      <div class="guessWord"></div>
 
+      <button id="chooseWord">Generate a word</button>
 
+      <div class="keyboard"></div>
 
+      <div class="numberOfGuesses"></div>
 
-<div class="container-game">
+      <div class="reset">
+        <button><a href="index.html">Reset</a></button>
+      </div>
 
+      <!-- container -->
+    </div>
 
-
-
-<div class="winStatus">
-	
-	<h2 class="won"></h2>
-
-	<h2 class="lose"></h2>
-
-</div>
-
-
-  <div class="hangmanPic">
-  	<img src="hangman-images/1.png" height="300" class="hmPic" id="1">
-
-  	<img src="hangman-images/2.png" height="300" class="hmPic" id="2">
-
-  	<img src="hangman-images/3.png" height="300" class="hmPic" id="3">
-
-  	<img src="hangman-images/4.png" height="300" class="hmPic" id="4">
-
-  	<img src="hangman-images/5.png" height="300" class="hmPic" id="5">
-
-  	<img src="hangman-images/6.png" height="300" class="hmPic" id="6">
-
-  	<img src="hangman-images/7.png" height="300" class="hmPic" id="7">
-
-  	<img src="hangman-images/8.png" height="300" class="hmPic" id="8">
-
-
-  		
-  </div>
-
-  
-
-  <div class="guessWord">
-  	
-  </div>
-
-<button id = "chooseWord">Generate a word</button>
-
-<div class="keyboard">
-
-</div>
-
-<div class="numberOfGuesses">
-	
-
-</div>
-
-
-
-<div class="reset">
-	<button><a href="index.html">Reset</a></button>
-</div>
-
-
-
-
-
-<!-- container -->
-</div>
-
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
